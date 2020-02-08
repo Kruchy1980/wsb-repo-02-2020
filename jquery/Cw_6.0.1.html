@@ -1,0 +1,65 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Selektory hierarchiczne</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            // [nazwa_atrybutu] - element posiada dany atrybut
+            // [nazwa_atrybutu2][nazwa_atrybutu2] - kilka atrybutów 
+ 
+            
+            // [atrybut = "dokładna treść"]  (UWAGA! Na wielkość znaków.)
+            
+             
+            // [atrybut *= "treść"] zawiera m.in. daną treść
+            
+            
+            // $("[src *= '.jpg']").css("border","10px solid black");
+            
+            // [atrybut $= "treść"] i [atrybut ^= "dokładna treść"] kończy / zaczyna się na daną treść
+            
+            
+            // [atrybut ~= "treść"] zawiera całe słowo
+            
+            
+            // [atrybut != "treść"] bez takiego atrybutu lub ma inną treść
+
+            
+        });
+    </script>
+    
+    <style>
+        img#obrazek-1, img#obrazek-3 {float: right;width: 180px;margin-left: 25px;}
+        img#obrazek-2 {float: left;width: 180px;margin-right: 25px;}
+    </style>
+
+</head>
+    
+<body>
+    
+    <div id="container">
+        <h1>Tytuł strony</h1>
+        
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis urna ut ipsum semper hendrerit. Duis porttitor porttitor pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam risus ipsum, auctor vitae nisl a, lacinia varius enim. Pellentesque iaculis posuere elementum. Nullam mattis consequat sem quis imperdiet. Nulla mattis, nibh vel euismod semper, ante est posuere erat, ac elementum lorem nibh vel nisl. Fusce nec fringilla nibh, in placerat urna. </p>
+        
+        <div id="box">
+            <h2>Nagłowek 2 strony</h2>
+            <p class="bold">Tekst w elemencie DIV</p>
+            <p class="bold">Tekst w elemencie DIV</p>
+        
+        </div>
+        <p class="text bold">
+        <img id="obrazek-1" src="img/cw60/obraz1.jpg" alt="Biedronka" />Donec porttitor tellus vitae tellus gravida elementum. Nullam non malesuada massa. Ut quis lacus quis ipsum sagittis lobortis sed ac orci. Morbi id suscipit sapien, at viverra magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris sit amet augue nunc. In hac habitasse platea dictumst. Cras efficitur posuere mi, sed consequat odio pulvinar quis. Donec hendrerit tempus sapien sed gravida. Nullam libero dui, semper sed arcu vel, vestibulum eleifend nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis consequat orci sit amet quam fermentum eleifend. Morbi justo erat, sollicitudin a velit auctor, facilisis interdum ligula. Proin elementum laoreet urna, sed efficitur leo congue id. </p>
+        
+        <p class="text">
+        <img id="obrazek-2" src="img/cw60/obraz2.jpg" alt="Ważka" title="Obraz z owadem" />Cras sed sagittis mi. Donec a euismod arcu. Maecenas maximus molestie tortor feugiat porttitor. Suspendisse et pellentesque elit. Vivamus a hendrerit augue. Nam pharetra nunc id tincidunt accumsan. Aliquam ut mauris aliquam, ullamcorper nisl sit amet, bibendum sapien. In sed mauris non orci condimentum sodales a sed purus. Duis sagittis consectetur lorem, in rhoncus ex aliquam non. Quisque suscipit mattis tellus, nec scelerisque eros imperdiet vitae. Nam justo eros, commodo ut molestie ac, porttitor vel elit. Nunc vitae elit a sapien tristique iaculis. Cras blandit volutpat egestas. Sed neque justo, ultrices eget tellus sed, tempor volutpat ante. </p>
+        
+        <p class="text">
+        <img id="obrazek-3" src="img/cw60/obraz2.jpg" alt="Ważka" title="Obraz z owadem" />Cras sed sagittis mi. Donec a euismod arcu. Maecenas maximus molestie tortor feugiat porttitor. Suspendisse et pellentesque elit. Vivamus a hendrerit augue. Nam pharetra nunc id tincidunt accumsan. Aliquam ut mauris aliquam, ullamcorper nisl sit amet, bibendum sapien. In sed mauris non orci condimentum sodales a sed purus. Duis sagittis consectetur lorem, in rhoncus ex aliquam non. Quisque suscipit mattis tellus, nec scelerisque eros imperdiet vitae. Nam justo eros, commodo ut molestie ac, porttitor vel elit. Nunc vitae elit a sapien tristique iaculis. Cras blandit volutpat egestas. Sed neque justo, ultrices eget tellus sed, tempor volutpat ante. </p>
+        
+    </div>
+    
+</body>
+</html>

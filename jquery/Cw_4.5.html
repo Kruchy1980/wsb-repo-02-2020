@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Podstawy jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <script>
+            // Napisz skrypt, który spowoduje, że linki drugiego poziomu będą widoczne dopiero po kliknięciu odpowiadającym ich opcji pierwszego poziomu. 
+
+            // Domyślnie menu ma być zwinięte. 
+            // Do pokazywania i ukrywania użyj metody tooggle(), która zadziała po kliknięciu w punkt listy.    
+            
+
+        </script>   
+        
+        <style type="text/css">
+            body {font-family: "Trebuchet MS", sans-serif;}
+            ul {list-style-type: none;}
+            span {cursor: pointer;}
+            span:hover {text-decoration: underline;}
+        </style>
+
+    </head> 
+    
+    <body>
+
+    <h1>Ćwiczenie 4.5</h1> 
+    <ul class="menu">
+        <li id="plik">
+            <span>Plik</span>
+            <ul>
+                <li><a href="#">Nowy</a></li>
+                <li><a href="#">Otwórz</a></li>
+                <li><a href="#">Zapisz</a></li>
+                <li><a href="#">Zapisz jako</a></li>
+            </ul>
+        </li>
+        <li id="edycja">
+            <span>Edycja</span>
+            <ul>
+                <li><a href="#">Cofnij</a></li>
+                <li><a href="#">Ponów</a></li>
+                <li><a href="#">Kopiuj</a></li>
+                <li><a href="#">Wklej</a></li>
+            </ul>
+        </li>
+        <li id="pomoc">
+            <span>Pomoc</span>
+            <ul>
+                <li><a href="#">Opis</a></li>
+                <li><a href="#">O programie</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    </body>
+</html>

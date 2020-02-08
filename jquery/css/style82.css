@@ -1,0 +1,43 @@
+    body {
+        font-family: Verdana, sans-serif;
+    }
+    table {
+        border-collapse: collapse;
+        border: 1px solid black;
+        font-size: 70%;
+        margin: 40px auto;
+    }
+
+    td {
+        border: 1px solid black;
+        padding: 4px 8px;
+    }
+
+    th {
+        border: 1px solid black;
+        padding: 4px 8px;
+	background: black;
+	color: white;
+    }
+    code {
+        font-size: 160%;
+    }
+    h1 {
+        text-align: center;
+    }
+    img {
+        vertical-align: middle;
+        border: none;
+        width: 20px;
+    }
+    a {
+        text-decoration: none;
+    }
+    strong {
+        cursor: pointer;
+        font-family: Courier New, monospace;
+    }
+    
+    div {
+        padding-left: 20px;
+    }

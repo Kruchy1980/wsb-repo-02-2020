@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Selektory Podstawowe</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+        //----------//
+        //- .css() -//
+        //----------//
+        
+        // Podstawową funkcją umożliwia modyfikacje i odczyt elementów wyglądu jest .css().  Zapewnia ona dostęp do styli CSS wybranego elementu. 
+        
+        // Duża zaletą jQuery jest to, że możemy używać te same selektory, co w CSS.
+        
+        //  *   selector   #id   .class
+        $(document).ready(function(){
+            //jeden element
+            $('*').css('border','1px solid #ddd');
+
+            //kilka emenetów
+            $(':header').css({
+                background: '#000', 
+                color: '#ff0'
+            });
+
+            $('#box p').addClass('extra');
+            //alert('Kolor tła to: '+$('h1').css('background-color'));
+            $('.text').css('color', $('h1').css('color'));
+        });
+        
+    </script>
+    <style>
+        .extra{
+            color: #0004ff;
+            text-transform: uppercase;
+        }
+    </style>
+
+
+</head>
+    
+<body>
+    
+    <div id="container">
+        <h1>Tytuł strony</h1>
+        
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer convallis urna ut ipsum semper hendrerit. Duis porttitor porttitor pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam risus ipsum, auctor vitae nisl a, lacinia varius enim. Pellentesque iaculis posuere elementum. Nullam mattis consequat sem quis imperdiet. Nulla mattis, nibh vel euismod semper, ante est posuere erat, ac elementum lorem nibh vel nisl. Fusce nec fringilla nibh, in placerat urna. </p>
+        
+        <div id="box">
+            <h2>Nagłowek 2 strony</h2>
+            <p class="bold">Tekst w elemencie DIV</p>
+            <p class="bold">Tekst w elemencie DIV</p>
+        
+        </div>
+        
+        <p class="text bold">Donec porttitor tellus vitae tellus gravida elementum. Nullam non malesuada massa. Ut quis lacus quis ipsum sagittis lobortis sed ac orci. Morbi id suscipit sapien, at viverra magna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris sit amet augue nunc. In hac habitasse platea dictumst. Cras efficitur posuere mi, sed consequat odio pulvinar quis. Donec hendrerit tempus sapien sed gravida. Nullam libero dui, semper sed arcu vel, vestibulum eleifend nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis consequat orci sit amet quam fermentum eleifend. Morbi justo erat, sollicitudin a velit auctor, facilisis interdum ligula. Proin elementum laoreet urna, sed efficitur leo congue id. </p>
+        
+        <p class="text">Cras sed sagittis mi. Donec a euismod arcu. Maecenas maximus molestie tortor feugiat porttitor. Suspendisse et pellentesque elit. Vivamus a hendrerit augue. Nam pharetra nunc id tincidunt accumsan. Aliquam ut mauris aliquam, ullamcorper nisl sit amet, bibendum sapien. In sed mauris non orci condimentum sodales a sed purus. Duis sagittis consectetur lorem, in rhoncus ex aliquam non. Quisque suscipit mattis tellus, nec scelerisque eros imperdiet vitae. Nam justo eros, commodo ut molestie ac, porttitor vel elit. Nunc vitae elit a sapien tristique iaculis. Cras blandit volutpat egestas. Sed neque justo, ultrices eget tellus sed, tempor volutpat ante. </p>
+        
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+    body {
+        margin: 100px;
+        font-family: Georgia, serif;
+        font-size: 80%;
+    }
+    .element {
+        width: 200px;
+        border: 1px solid black;
+        background: #eafbf0;
+        padding: 5px;
+        margin: 10px;
+    }
+    .element a {
+        text-decoration: none;
+        display: block;
+        float: left;
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        background: #d6f8e1;
+        border: 1px solid gray;
+        margin-right: 10px;
+        font-weight: bold;
+        color: black;
+    }
+    .element h3 {
+        float: left;
+        background: #d6f8e1;
+        width: 200px;
+        margin: 0;
+        padding: 0;
+        font-family: "Trebuchet MS", sans-serif;
+                    
+    }
+    .element p {
+        clear: both;
+        padding: 10px;
+    }
+    .clearing {
+        clear: both;
+    }

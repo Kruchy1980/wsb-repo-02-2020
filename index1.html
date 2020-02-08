@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>jQuery-Excercises</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- W opariu o skrypt możemy zrobić coś takiego -->
+    <div id="myDiv"></div>
+    <script>
+        $(document).ready(() => {
+            const button = document.createElement('button')
+            button.innerText = 'Pokaż datę'
+            const div = document.createElement('div')
+            document.body.appendChild(div)
+            document.body.appendChild(button)
+            button.addEventListener('click', () => {
+                let date = new Date()
+                const year = date.getFullYear()
+                const month = date.getMonth()
+                const day = date.getDate()
+                const hour = date.getHours()
+                const minute = date.getMinutes()
+                const seconds = date.getSeconds()
+                div.innerHTML = `${year} ${month +
+            1} ${day} | ${hour} ${minute} ${seconds}`
+            })
+        })
+    </script>
+</body>
+
+</html>

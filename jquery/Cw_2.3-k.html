@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Podstawy jQuery</title>
+    </head>
+    
+    <!--
+    1. Wykorzystaj bibliotekę JQUERY, do uproszczenia kodu przez odseparowanie zachowania (zdarzeń JS) od struktury HTML.
+
+    2. Odseparuj także wygląd listy kożystając z wydzielonego kodu CSS w części <head></head> strony.
+    -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('li').click(function(){
+                alert("aaa");
+            });
+        });
+    </script>
+
+    <style>
+        li {
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        }
+    </style>
+
+    
+    <body>
+        <h1>Ćwiczenie 2.3</h1>
+
+        <ul>
+            <li>lorem</li>
+            <li>impus</li>
+            <li>dolor</li>
+            <li>sit</li>
+            <li>amet</li>
+        </ul>
+
+    </body>
+</html>

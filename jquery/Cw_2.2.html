@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Podstawy jQuery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+        <script type="text/javascript">
+            // Napisz skrypt, który wyświetli komunikat „Dziękuję!” po kliknięciu w akapit z tekstem „Kliknij mnie…” (KORZYSTAJ Z JQUERY).
+            $(document).ready(function(){
+                $('p').click(function(){
+                    alert("Dziekuję - użyłeś jQuery.")                    
+                });
+            });
+            
+        </script>
+
+    </head>
+
+    <body>
+        <h1>Ćwiczenie 2</h1>
+
+        <p>Kliknij mnie...</p>   
+    </body>
+</html>

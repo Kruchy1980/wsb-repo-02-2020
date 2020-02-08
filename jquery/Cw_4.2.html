@@ -1,0 +1,70 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Podstawy jQuery</title>
+    <script src="js/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            //Wykonaj ćwiczenie 4.1 wykorzystując łańcuchowy zapis wywołań kilku metod na tym samym zbiorze elementów oraz parametr this przekazywany do funkcji obsługi zdarzenia. Zdarzenie rozwiąż w taki sposób, aby kolor ustalony jako tło akapitu był odczytywany z elementu div, który wygenerował zdarzenie.
+            // Użyj zdażenia .mouseover() .mouseout()
+            
+            
+        });
+    </script>
+
+    <style type="text/css">
+        .kolory {
+            width: 160px;
+            margin: 50px auto;
+            padding-bottom: 25px;
+        }
+        .kolory div {
+            width: 40px;
+            height: 40px;
+            border: 1px solid black;
+            margin: 5px;
+            float: left;
+        }
+        #czerwony {
+            background: red;
+        }
+        #zielony {
+            background: green;
+        }
+        #niebieski {
+            background: blue;
+        }
+        p {
+            clear: both;
+        }
+    </style>
+    
+</head>
+    
+<body>
+
+<h1>Ćwiczenie 4.2</h1>
+
+<div class="kolory">
+    <div id="czerwony"></div>
+    <div id="zielony"></div>
+    <div id="niebieski"></div>
+</div>
+
+<p>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Suspendisse nunc pede, aliquet at, tincidunt id, sodales in,
+nulla. Pellentesque viverra ipsum ac quam. In hac habitasse
+platea dictumst. In eget tellus. Nullam placerat, felis in
+scelerisque sollicitudin, magna velit dictum mi, ac molestie
+quam urna nec nibh. Morbi facilisis. Suspendisse pulvinar
+nisl at elit. Sed euismod orci sed est. Donec tempor tellus
+sit amet ante. Aenean quis leo. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis
+egestas. Duis sapien. Nam elementum velit nec mauris.
+Curabitur non turpis quis felis placerat luctus.
+</p>
+    
+</body>
+</html>

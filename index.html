@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>jQuery-Excercises</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <p class="p1"></p>
+    <div class="paragraphs">
+        <p class="p2">paragraph1</p>
+        <p class="p3">paragraph2</p>
+        <p class="p4">paragraph3</p>
+        <p class="p5">paragraph4</p>
+    </div>
+    <!-- W opariu o skrypt możemy zrobić coś takiego -->
+    <div id="myDiv"></div>
+    <script>
+        $(document).ready(() => {
+            // $('#myDiv').html(
+            //     '<b>hello</b> <b style="color:red;font-size: 24px">jQuery</b>'
+            // )
+            // let liczba1 = 5
+            // let liczba2 = 6
+            // let suma = liczba1 + liczba2
+            // const div = document.createElement('div')
+            // document.body.appendChild(div)
+            // if (suma % 2 == 0) {
+            //     div.innerText = suma
+            //     div.style.color = 'blue'
+            // } else {
+            //     div.innerText = suma
+            //     div.style.color = 'red'
+            // }
+            // let obj = document.querySelector('.p1')
+            // obj.innerHTML = 'Gupi Jasiu :)'
+            // let tab = [1, 5, 8, 7, 19]
+            // $('#myDiv').html('<h1>' + tab.join('|') + '</h1>')
+            //   let tab = [1, 5, 8, 7, 19]
+            //   $('#myDiv').html('<h1>' + tab.sort((a, b) => a - b) + '</h1>')
+            $('.p2').click(() => {
+                    $('.p2').text('paragraph - clicked!')
+                })
+                // $('.p3').click(() => {
+                //     $('.p3').text('paragraph - clicked!')
+                // })
+            $('.p4').click(() => {
+                $('.p4').text('paragraph - clicked!')
+            })
+            $('.p4').mouseenter(() => {
+                $('.p4').text('click->paragraph hide')
+            })
+            $('.p3').click(() => {
+                $('.p3').hide('slow')
+            })
+        })
+    </script>
+</body>
+
+</html>
