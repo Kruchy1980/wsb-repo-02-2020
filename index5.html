@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+
+<body></body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>jQuery</title>
+    <link rel="stylesheet" href="./my.css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <select name="" id="marker">
+        <option value="one">option1</option>
+        <option value="two">option2</option>
+        <option value="three">option3</option>
+        <option value="four">option4</option>
+      </select>
+        <select name="" id="color">
+        <option value="1">red</option>
+        <option value="2">green</option>
+        <option value="3">blue</option>
+      </select>
+        <button id="change">Zmień</button>
+    </div>
+    <h1>Cytat 1</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quaerat itaque impedit dignissimos doloremque, alias repellendus rerum. Illo assumenda soluta, asperiores vitae distinctio aliquam accusantium ipsa expedita aut itaque saepe.
+    </p>
+    <h1>Cytat 2</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi voluptas atque hic distinctio sunt modi animi? Corporis necessitatibus tempore temporibus harum consequuntur! Facere laudantium ut nulla hic aliquam? Similique.
+    </p>
+    <h1>Cytat 3</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi voluptas atque hic distinctio sunt modi animi? Corporis necessitatibus tempore temporibus harum consequuntur! Facere laudantium ut nulla hic aliquam? Similique.
+    </p>
+    <h1>Cytat 4</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi voluptas atque hic distinctio sunt modi animi? Corporis necessitatibus tempore temporibus harum consequuntur! Facere laudantium ut nulla hic aliquam? Similique.
+    </p>
+    <!-- <script src="main.js"></script> -->
+    <script>
+        $(document).ready(() => {
+            const changeColor = (mark, col) => {
+                let x = document.getElementsByTagName(mark);
+                for (let i = 0; i <= x.length; i++) {
+                    x[i].style.color = col;
+                }
+            };
+            let btn = document.getElementById("change");
+            btn.addEventListener("click", () => {});
+        });
+    </script>
+</body>
+
+</html>
