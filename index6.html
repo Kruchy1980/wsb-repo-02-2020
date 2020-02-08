@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+
+<body></body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>jQuery</title>
+    <link rel="stylesheet" href="./my.css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <button id="myBtn">Uruchom</button>
+    <div id="myDiv"></div>
+
+    <!-- <script src="main.js"></script> -->
+    <script>
+        $(document).ready(() => {
+            let btn = document.getElementById("myBtn");
+
+            const losujLiczby = () => {
+                ilosc = 10;
+                let tab = new Array(ilosc);
+                for (let i = 0; i < ilosc; i++) {
+                    tab[i] = Math.floor(Math.random() * 100);
+                }
+                $("#myDiv").innerHTML = `<h2 id="liczbaLos"> ${tab}</h2`;
+            };
+            const zmienStyl = kolor => {
+                document.getElementById("liczbaLos").style.color = color;
+            };
+            const changeBackgroundColor = () => {
+                let last_time = new Date().getTime();
+
+                setInterval(() => {
+                    let r = Math.floor(Math.random() * 255);
+                    let g = Math.floor(Math.random() * 255);
+                    let b = Math.floor(Math.random() * 255);
+                    let time = new Date().getTime();
+                    let offset = time - last_time;
+                    if (offset < 0 || offset >= 1000) {
+                        document.body.style.backgroundColor = `rgb(${r},${g},${b})`;
+                    }
+                }, 1000);
+            };
+            btn.addEventListener("click", losujLiczby);
+            btn.addEventListener("click", zmienStyl.bind((btn.color = "green")));
+            btn.addEventListener("click", changeBackgroundColor);
+        });
+    </script>
+</body>
+
+</html>

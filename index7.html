@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+
+<body></body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>jQuery</title>
+    <link rel="stylesheet" href="./my.css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./my.css/style.css" />
+</head>
+
+<body>
+    <div class="row">
+        <div class="col col-4">
+            <div id="mybg1" class="container m-5 mybg"></div>
+            <div id="mycard1" class="container m-5 mycard">
+                <img src="./images/image1.jpeg" alt="" srcset="" />
+            </div>
+        </div>
+        <div class="col col-4">
+            <div id="mybg2" class="container m-5 mybg"></div>
+            <div id="mycard2" class="container m-5 mycard">
+                <img src="./images/image2.jpeg" alt="" srcset="" />
+            </div>
+        </div>
+        <div class="col col-4">
+            <div id="mybg3" class="container m-5 mybg"></div>
+            <div id="mycard3" class="container m-5 mycard">
+                <img src="./images/image3.jpeg" alt="" srcset="" />
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="main.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $("#mycard1").mouseenter(() => {
+                $("#mybg1").addClass("myblureffect");
+            });
+            $("#mycard1").mouseleave(() => {
+                $("#mybg1").removeClass("myblureffect");
+            });
+            $("#mycard2").mouseenter(() => {
+                $("#mybg2").addClass("myblureffect");
+            });
+            $("#mycard2").mouseleave(() => {
+                $("#mybg2").removeClass("myblureffect");
+            });
+            $("#mycard3").mouseenter(() => {
+                $("#mybg3").addClass("myblureffect");
+            });
+            $("#mycard3").mouseleave(() => {
+                $("#mybg3").removeClass("myblureffect");
+            });
+        });
+    </script>
+</body>
+
+</html>
